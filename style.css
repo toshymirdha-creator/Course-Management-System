@@ -1,0 +1,151 @@
+body {
+
+    font-family: Arial;
+
+    background-color: #fff8f0;
+
+    margin: 0;
+
+    padding: 30px;
+
+    color: #333333;
+
+}
+
+h1 {
+
+    text-align: center;
+
+    color: #ff6b6b;
+
+    margin-bottom: 10px;
+
+}
+
+h2 {
+
+    text-align: center;
+
+    color: #20a39e;
+
+}
+
+hr {
+
+    border: 0;
+
+    height: 3px;
+
+    background-color: #ffd166;
+
+    margin-bottom: 25px;
+
+}
+
+form {
+
+    width: 400px;
+
+    margin: 20px auto;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border: 2px solid #ffd166;
+
+    border-radius: 12px;
+
+}
+
+label {
+
+    font-weight: bold;
+
+    color: #20a39e;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 10px;
+
+    margin-top: 7px;
+
+    margin-bottom: 10px;
+
+    border: 2px solid #b8e0d2;
+
+    border-radius: 7px;
+
+    box-sizing: border-box;
+
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+
+    border: 2px solid #20a39e;
+
+    outline: none;
+
+}
+
+input[type="submit"] {
+
+    background-color: #ff6b6b;
+
+    color: white;
+
+    padding: 10px 22px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+}
+
+input[type="submit"]:hover {
+
+    background-color: #ff8c42;
+
+}
+
+a {
+
+    color: #20a39e;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+a:hover {
+
+    color: #ff6b6b;
+
+    text-decoration: underline;
+
+}
+
+p {
+
+    color: #ff6b6b;
+
+    font-weight: bold;
+
+}
