@@ -142,4 +142,55 @@ function validateCourseDropRequest(form) {
     }
 
     return true;
+    function validateRegistrationForm(form) {
+
+    const fullname = form.fullname.value.trim();
+    const lastname = form.lastname.value.trim();
+    const email = form.email.value.trim();
+    const password = form.password.value;
+    const cpassword = form.cpassword.value;
+    const role = form.role.value;
+
+    if (fullname === "") {
+        alert("Please fill up First Name properly");
+        return false;
+    }
+
+    if (lastname === "") {
+        alert("Please fill up Last Name properly");
+        return false;
+    }
+
+    if (email === "") {
+        alert("Please fill up Email properly");
+        return false;
+    }
+
+    if (!email.includes("@")) {
+        alert("Please enter a valid email");
+        return false;
+    }
+
+    if (password === "") {
+        alert("Please fill up Password properly");
+        return false;
+    }
+
+    if (cpassword === "") {
+        alert("Please fill up Confirm Password properly");
+        return false;
+    }
+
+    if (password !== cpassword) {
+        alert("Password and Confirm Password do not match");
+        return false;
+    }
+
+    if (role === "") {
+        alert("Please select a role");
+        return false;
+    }
+
+    return true;
+}
 }
