@@ -8,7 +8,7 @@ $user = isset($_SESSION["profile"]) ? $_SESSION["profile"] : array();
 <html>
 <head>
     <title>View Profile</title>
-    <link rel="stylesheet" href="../../../../style.css">
+    <link rel="stylesheet" href="/cms/style.css">
 </head>
 
 <body>
@@ -42,25 +42,25 @@ if (!empty($user)) {
 
 <br>
 
-<a href="../../../controller/AdminController.php?action=users">
+<a href="../AdminController.php?action=users">
     User Management
 </a>
 
 <br><br>
 
-<a href="../../../controller/AdminController.php?action=courses">
+<a href="../AdminController.php?action=courses">
     Course Management
 </a>
 
 <br><br>
 
-<a href="../../../controller/AdminController.php?action=courseDrops">
+<a href="../AdminController.php?action=courseDrops">
     Course Drop Approval
 </a>
 
 <br><br>
 
-<a href="../../../controller/AdminController.php?action=editProfile">
+<a href="../AdminController.php?action=editProfile">
     Edit Profile
 </a>
 

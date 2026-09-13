@@ -14,7 +14,7 @@ unset($_SESSION["profileError"]);
 <html>
 <head>
     <title>Edit Profile</title>
-    <link rel="stylesheet" href="../../../../style.css">
+    <link rel="stylesheet" href="/cms/style.css">
 </head>
 
 <body>
@@ -38,7 +38,7 @@ if (!empty($user)) {
 <h3>Update Name</h3>
 
 <form method="post"
-      action="../../../controller/AdminController.php?action=updateName">
+      action="../AdminController.php?action=updateName">
 
     <label>Name:</label>
 
@@ -80,7 +80,7 @@ document.getElementById("emailForm").addEventListener("submit", function(event) 
     const formData = new FormData();
     formData.append("email", email);
 
-    fetch("../../../controller/AdminController.php?action=updateEmail", {
+    fetch("../AdminController.php?action=updateEmail", {
         method: "POST",
         body: formData
     })
@@ -102,25 +102,25 @@ document.getElementById("emailForm").addEventListener("submit", function(event) 
 
 <br>
 
-<a href="../../../controller/AdminController.php?action=profile">
+<a href="../AdminController.php?action=profile">
     View Profile
 </a>
 
 <br><br>
 
-<a href="../../../controller/AdminController.php?action=users">
+<a href="../AdminController.php?action=users">
     User Management
 </a>
 
 <br><br>
 
-<a href="../../../controller/AdminController.php?action=courses">
+<a href="../AdminController.php?action=courses">
     Course Management
 </a>
 
 <br><br>
 
-<a href="../../../controller/AdminController.php?action=courseDrops">
+<a href="../AdminController.php?action=courseDrops">
     Course Drop Approval
 </a>
 

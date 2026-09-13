@@ -14,7 +14,7 @@ unset($_SESSION["dropError"]);
 <html>
 <head>
     <title>Course Drop Approval</title>
-    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="/cms/style.css">
 </head>
 
 <body>
@@ -68,7 +68,7 @@ if ($error != "") {
             ?>
 
                 <form method="post"
-                      action="../../controller/AdminController.php?action=approveCourseDrop">
+                      action="AdminController.php?action=approveCourseDrop">
 
                     <input type="hidden"
                            name="id"
@@ -81,7 +81,7 @@ if ($error != "") {
                 <br>
 
                 <form method="post"
-                      action="../../controller/AdminController.php?action=rejectCourseDrop">
+                      action="AdminController.php?action=rejectCourseDrop">
 
                     <input type="hidden"
                            name="id"
@@ -108,25 +108,25 @@ if ($error != "") {
 
 <br>
 
-<a href="../../controller/AdminController.php?action=users">
+<a href="AdminController.php?action=users">
     User Management
 </a>
 
 <br><br>
 
-<a href="../../controller/AdminController.php?action=courses">
+<a href="AdminController.php?action=courses">
     Course Management
 </a>
 
 <br><br>
 
-<a href="../../controller/AdminController.php?action=profile">
+<a href="AdminController.php?action=profile">
     View Profile
 </a>
 
 <br><br>
 
-<a href="../../controller/AdminController.php?action=editProfile">
+<a href="AdminController.php?action=editProfile">
     Edit Profile
 </a>
 

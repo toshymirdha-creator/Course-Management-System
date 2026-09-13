@@ -1,6 +1,6 @@
 <?php
 
-require_once "../../model/dbConnect.php";
+require_once "../model/dbConnect.php";
 
 function getAllCourseDrops()
 {

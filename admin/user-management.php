@@ -14,7 +14,7 @@ unset($_SESSION["userError"]);
 <html>
 <head>
     <title>User Management</title>
-    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="/cms/style.css">
 </head>
 
 <body>
@@ -31,7 +31,7 @@ if ($error != "") {
 }
 ?>
 
-<form method="post" action="../../controller/AdminController.php?action=addUser">
+<form method="post" action="AdminController.php?action=addUser">
 
     <label>Name:</label>
     <input type="text" name="name" id="name">
@@ -85,25 +85,25 @@ if ($error != "") {
 
 <br>
 
-<a href="../../controller/AdminController.php?action=courses">
+<a href="AdminController.php?action=courses">
     Course Management
 </a>
 
 <br><br>
 
-<a href="../../controller/AdminController.php?action=courseDrops">
+<a href="AdminController.php?action=courseDrops">
     Course Drop Approval
 </a>
 
 <br><br>
 
-<a href="../../controller/AdminController.php?action=profile">
+<a href="AdminController.php?action=profile">
     View Profile
 </a>
 
 <br><br>
 
-<a href="../../controller/AdminController.php?action=editProfile">
+<a href="AdminController.php?action=editProfile">
     Edit Profile
 </a>
 

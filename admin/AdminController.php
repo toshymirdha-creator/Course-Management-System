@@ -2,9 +2,9 @@
 
 session_start();
 
-require_once "../model/user.php";
-require_once "../model/course.php";
-require_once "../model/courseDrop.php";
+require_once "user.php";
+require_once "course.php";
+require_once "courseDrop.php";
 
 
 
@@ -33,7 +33,7 @@ if ($action === "users") {
 
     $_SESSION["users"] = getAllUsers();
 
-    header("Location: ../view/admin/user-management.php");
+    header("Location: user-management.php");
     exit();
 }
 
@@ -81,7 +81,7 @@ if ($action === "courses") {
 
     $_SESSION["courses"] = getAllCourses();
 
-    header("Location: ../view/admin/course-management.php");
+    header("Location: course-management.php");
     exit();
 }
 
@@ -155,7 +155,7 @@ if ($action === "courseDrops") {
 
     $_SESSION["courseDrops"] = getAllCourseDrops();
 
-    header("Location: ../view/admin/course-drop-approval.php");
+    header("Location: course-drop-approval.php");
     exit();
 }
 
@@ -229,7 +229,7 @@ if ($action === "profile") {
     }
 
 
-    header("Location: ../view/admin/profile/view-profile.php");
+    header("Location: profile/view-profile.php");
     exit();
 }
 
@@ -251,7 +251,7 @@ if ($action === "editProfile") {
     }
 
 
-    header("Location: ../view/admin/profile/edit-profile.php");
+    header("Location: profile/edit-profile.php");
     exit();
 }
 
