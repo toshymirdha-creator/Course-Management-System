@@ -50,31 +50,31 @@ if (
     <ul>
 
         <li>
-            <a href="AdminController.php?action=users">
+            <a href="UserController.php?action=users">
                 User Management
             </a>
         </li>
 
         <li>
-            <a href="AdminController.php?action=courses">
+            <a href="CourseController.php?action=courses">
                 Course Management
             </a>
         </li>
 
         <li>
-            <a href="AdminController.php?action=courseDrops">
+            <a href="CourseDropController.php?action=courseDrops">
                 Course Drop Final Approval
             </a>
         </li>
 
         <li>
-            <a href="AdminController.php?action=profile">
+            <a href="ViewProfileController.php">
                 View Profile
             </a>
         </li>
 
         <li>
-            <a href="AdminController.php?action=editProfile">
+            <a href="EditProfileController.php?action=editProfile">
                 Edit Profile
             </a>
         </li>

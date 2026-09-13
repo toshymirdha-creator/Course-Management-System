@@ -38,7 +38,7 @@ if (!empty($user)) {
 <h3>Update Name</h3>
 
 <form method="post"
-      action="../AdminController.php?action=updateName">
+      action="../EditProfileController.php?action=updateName">
 
     <label>Name:</label>
 
@@ -80,7 +80,7 @@ document.getElementById("emailForm").addEventListener("submit", function(event) 
     const formData = new FormData();
     formData.append("email", email);
 
-    fetch("../AdminController.php?action=updateEmail", {
+    fetch("../EditProfileController.php?action=updateEmail", {
         method: "POST",
         body: formData
     })
@@ -102,25 +102,24 @@ document.getElementById("emailForm").addEventListener("submit", function(event) 
 
 <br>
 
-<a href="../AdminController.php?action=profile">
+<a href="../ViewProfileController.php">
     View Profile
 </a>
-
 <br><br>
 
-<a href="../AdminController.php?action=users">
+<a href="../UserController.php?action=users">
     User Management
 </a>
 
 <br><br>
 
-<a href="../AdminController.php?action=courses">
+<a href="../CourseController.php?action=courses">
     Course Management
 </a>
 
 <br><br>
 
-<a href="../AdminController.php?action=courseDrops">
+<a href="../CourseDropController.php?action=courseDrops">
     Course Drop Approval
 </a>
 

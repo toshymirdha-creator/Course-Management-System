@@ -31,7 +31,7 @@ if ($error != "") {
 }
 ?>
 
-<form method="post" action="AdminController.php?action=addUser">
+<form method="post" action="UserController.php?action=addUser">
 
     <label>Name:</label>
     <input type="text" name="name" id="name">
@@ -85,25 +85,25 @@ if ($error != "") {
 
 <br>
 
-<a href="AdminController.php?action=courses">
+<a href="CourseController.php?action=courses">
     Course Management
 </a>
 
 <br><br>
 
-<a href="AdminController.php?action=courseDrops">
+<a href="CourseDropController.php?action=courseDrops">
     Course Drop Approval
 </a>
 
 <br><br>
 
-<a href="AdminController.php?action=profile">
+<a href="ViewProfileController.php">
     View Profile
 </a>
 
 <br><br>
 
-<a href="AdminController.php?action=editProfile">
+<a href="EditProfileController.php?action=editProfile">
     Edit Profile
 </a>
 

@@ -42,25 +42,25 @@ if (!empty($user)) {
 
 <br>
 
-<a href="../AdminController.php?action=users">
+<a href="../UserController.php?action=users">
     User Management
 </a>
 
 <br><br>
 
-<a href="../AdminController.php?action=courses">
+<a href="../CourseController.php?action=courses">
     Course Management
 </a>
 
 <br><br>
 
-<a href="../AdminController.php?action=courseDrops">
+<a href="../CourseDropController.php?action=courseDrops">
     Course Drop Approval
 </a>
 
 <br><br>
 
-<a href="../AdminController.php?action=editProfile">
+<a href="../EditProfileController.php?action=editProfile">
     Edit Profile
 </a>
 

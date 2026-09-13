@@ -33,7 +33,7 @@ if ($error != "") {
 
 <h3>Add Course</h3>
 
-<form method="post" action="AdminController.php?action=addCourse">
+<form method="post" action="CourseController.php?action=addCourse">
 
     <label>Course Code:</label>
     <input type="text" name="code" id="code">
@@ -82,7 +82,7 @@ if ($error != "") {
         <td><?php echo $course["teacher_id"]; ?></td>
 
         <td>
-            <form method="post" action="AdminController.php?action=deleteCourse">
+            <form method="post" action="CourseController.php?action=deleteCourse">
 
                 <input type="hidden" name="id" value="<?php echo $course["id"]; ?>">
 
@@ -100,25 +100,25 @@ if ($error != "") {
 
 <br>
 
-<a href="AdminController.php?action=users">
+<a href="UserController.php?action=users">
     User Management
 </a>
 
 <br><br>
 
-<a href="AdminController.php?action=courseDrops">
+<a href="CourseDropController.php?action=courseDrops">
     Course Drop Approval
 </a>
 
 <br><br>
 
-<a href="AdminController.php?action=profile">
+<a href="ViewProfileController.php">
     View Profile
 </a>
 
 <br><br>
 
-<a href="AdminController.php?action=editProfile">
+<a href="EditProfileController.php?action=editProfile">
     Edit Profile
 </a>
 

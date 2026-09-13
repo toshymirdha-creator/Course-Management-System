@@ -68,7 +68,7 @@ if ($error != "") {
             ?>
 
                 <form method="post"
-                      action="AdminController.php?action=approveCourseDrop">
+      action="CourseDropController.php?action=approveCourseDrop">
 
                     <input type="hidden"
                            name="id"
@@ -81,7 +81,7 @@ if ($error != "") {
                 <br>
 
                 <form method="post"
-                      action="AdminController.php?action=rejectCourseDrop">
+      action="CourseDropController.php?action=rejectCourseDrop">
 
                     <input type="hidden"
                            name="id"
@@ -108,25 +108,25 @@ if ($error != "") {
 
 <br>
 
-<a href="AdminController.php?action=users">
+<a href="UserController.php?action=users">
     User Management
 </a>
 
 <br><br>
 
-<a href="AdminController.php?action=courses">
+<a href="CourseController.php?action=courses">
     Course Management
 </a>
 
 <br><br>
 
-<a href="AdminController.php?action=profile">
+<a href="ViewProfileController.php">
     View Profile
 </a>
 
 <br><br>
 
-<a href="AdminController.php?action=editProfile">
+<a href="EditProfileController.php?action=editProfile">
     Edit Profile
 </a>
 
