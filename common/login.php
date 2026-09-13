@@ -1,7 +1,6 @@
 <?php
 
-require_once __DIR__ . "/../controller/LoginController.php";
-
+require_once __DIR__ . "/LoginController.php";
 $message = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

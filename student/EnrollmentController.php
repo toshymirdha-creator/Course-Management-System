@@ -1,7 +1,6 @@
 <?php
 
-require_once __DIR__ . "/../model/Enrollment.php";
-
+require_once __DIR__ . "/Enrollment.php";
 class EnrollmentController
 {
     public function enroll($student_id, $course_id)

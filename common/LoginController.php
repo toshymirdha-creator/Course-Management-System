@@ -2,8 +2,7 @@
 
 session_start();
 
-require_once __DIR__ . "/../model/User.php";
-
+require_once __DIR__ . "/User.php";
 class LoginController
 {
     public function login($email, $password)
@@ -18,7 +17,7 @@ class LoginController
 
             if ($user["role"] == "student") {
 
-                header("Location: ../../student/view/dashboard.php");
+            header("Location: ../student/dashboard.php");
                 exit();
 
             } else {
